@@ -10,13 +10,13 @@ pipeline {
     }
     
     stages {
-        stage('SCM NEW CHECKOUT') {
+        stage('SCM NEWSQ CHECKOUT') {
             steps {
                git branch: 'main', url: 'https://github.com/VM2322/Vivek-s-Gaming-Application'
             }
         }
     
-    stage('MAVEN COMPILE') {
+    stage('MAVEN COMPILE FIRER') {
             steps {
                 sh "mvn compile"
             }
